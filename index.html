@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>بوابة المعتمر الرقمية - صمم رحلتك الإيمانية</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&amp;family=Amiri:wght@700&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+
+<meta content="بوابة المعتمر الرقمية - صمم رحلتك الإيمانية بسهولة وتمتع بباقات وخدمات مميزة." name="description"/><link href="css/styles.css" rel="stylesheet"/></head>
+<body class="bg-gray-50">
+<!-- Navigation Bar -->
+<nav class="fixed w-full z-50 transition-all duration-300 text-white" id="navbar">
+<div class="container mx-auto px-6 py-4">
+<div class="flex justify-between items-center">
+<a class="flex items-center gap-3" href="#home">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
+<i class="fas fa-kaaba text-2xl text-gray-800"></i>
+</div>
+<div>
+<div class="text-2xl font-bold gold-gradient-text">بوابة المعتمر الرقمية</div>
+<div class="text-xs text-gray-300 transition-colors duration-300" id="nav-subtitle">رحلتك الروحانية تبدأ هنا</div>
+</div>
+</a>
+<div class="hidden lg:flex items-center gap-8 font-medium">
+<a class="hover:text-amber-300 transition" href="#generator">مولد العمرة الذكي</a>
+<a class="hover:text-amber-300 transition" href="#riyadh">تجارب سياحية</a>
+<a class="hover:text-amber-300 transition" href="#heritage">محطات التراث</a>
+<a class="hover:text-amber-300 transition" href="#gallery">معرض الصور</a>
+<a class="hover:text-amber-300 transition" href="#testimonials">آراء العملاء</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="btn-gold px-6 py-2 rounded-full font-bold text-sm">
+<i class="fas fa-user ml-2"></i>تسجيل الدخول
+                    </button>
+<button class="lg:hidden">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center justify-center overflow-hidden text-white hero-section" id="home">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-dark via-transparent to-transparent"></div>
+<div class="relative z-10 text-center px-4">
+<h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">صمم رحلتك الإيمانية <br/> بلمسة زر</h1>
+<p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-200">
+                استخدم مولد العمرة الذكي لتخطيط رحلتك إلى أطهر البقاع، وأضف إليها تجارب ثقافية فريدة من قلب المملكة.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+<a class="btn-gold w-full sm:w-auto px-10 py-4 rounded-full text-lg font-bold text-center" href="#generator">
+<i class="fas fa-magic-wand-sparkles ml-2"></i>جرب المولد الذكي الآن
+                </a>
+<a class="w-full sm:w-auto px-10 py-4 rounded-full text-lg font-bold text-center bg-white/20 hover:bg-white/30 transition" href="#packages">
+<i class="fas fa-suitcase ml-2"></i>عرض الباقات
+                </a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+<a href="#generator"><i class="fas fa-chevron-down text-3xl"></i></a>
+</div>
+</header>
+<!-- Stats Section -->
+<section class="py-12 bg-white">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="stats-card">
+<i class="fas fa-users fa-2x mb-2"></i>
+<div class="stats-number">10,000+</div>
+<div>معتمر سعيد</div>
+</div>
+<div class="stats-card">
+<i class="fas fa-hotel fa-2x mb-2"></i>
+<div class="stats-number">50+</div>
+<div>فندق شريك</div>
+</div>
+<div class="stats-card">
+<i class="fas fa-bus fa-2x mb-2"></i>
+<div class="stats-number">200+</div>
+<div>حافلة حديثة</div>
+</div>
+<div class="stats-card">
+<i class="fas fa-city fa-2x mb-2"></i>
+<div class="stats-number">15+</div>
+<div>وجهة سياحية</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Smart Umrah Generator -->
+<section class="py-24 islamic-pattern-bg" id="generator">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl section-title mb-4">مولد العمرة الذكي</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    حدد تفاصيل رحلتك، ودع الذكاء الاصطناعي يقترح عليك أفضل باقات العمرة مع مقارنة فورية للأسعار والفنادق.
+                </p>
+</div>
+<div class="max-w-5xl mx-auto bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border">
+<form autocomplete="off" class="space-y-6" id="umrahForm">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div>
+<label class="form-label" for="departureCity"><i class="fas fa-map-marker-alt text-gray-400 mr-2"></i>مدينة الانطلاق</label>
+<select class="form-input" id="departureCity" required="">
+<option value="الرياض">الرياض</option>
+<option value="جدة">جدة</option>
+<option value="الدمام">الدمام</option>
+</select>
+</div>
+<div>
+<label class="form-label" for="tripDirection"><i class="fas fa-route text-gray-400 mr-2"></i>اتجاه الرحلة</label>
+<select class="form-input" id="tripDirection" required="">
+<option value="">اختر اتجاه الرحلة</option>
+<optgroup label="عروض العائلات">
+<option value="makkahOnly">مكة فقط</option>
+<option value="makkahVIP">رحلة VIP مكة (3 أيام)</option>
+<option value="makkahMadinaVisit">مكة + زيارة المدينة</option>
+</optgroup>
+<optgroup label="عروض خاصة">
+<option value="single_3_days">عرض العازب - 3 أيام</option>
+<option value="single_5_days">عرض العازب - 5 أيام</option>
+</optgroup>
+</select>
+</div>
+<div>
+<label class="form-label" for="numPeople"><i class="fas fa-users text-gray-400 mr-2"></i>عدد المقاعد</label>
+<input class="form-input" id="numPeople" max="20" min="1" required="" type="number" value="1"/>
+</div>
+<div>
+<label class="form-label" for="numRooms" id="numRoomsLabel"><i class="fas fa-bed text-gray-400 mr-2"></i>عدد الغرف</label>
+<input class="form-input" id="numRooms" max="10" min="1" required="" type="number" value="1"/>
+</div>
+<div class="md:col-span-1">
+<label class="form-label" for="departureDate"><i class="fas fa-calendar-alt text-gray-400 mr-2"></i>تاريخ الذهاب: <span class="text-green-600 font-semibold mr-1" id="departureDay"></span></label>
+<input class="form-input" id="departureDate" required="" type="date"/>
+</div>
+<div class="md:col-span-1">
+<label class="form-label" for="returnDate"><i class="fas fa-calendar-check text-gray-400 mr-2"></i>تاريخ العودة: <span class="text-green-600 font-semibold mr-1" id="returnDay"></span></label>
+<input class="form-input" id="returnDate" required="" type="date"/>
+</div>
+</div>
+<button class="w-full btn-gold py-4 rounded-lg text-xl font-bold flex items-center justify-center" type="submit">
+<i class="fas fa-search-dollar ml-2"></i>
+                         ابحث عن أفضل العروض
+                     </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Packages Section -->
+<section class="py-24 bg-white" id="packages">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl section-title mb-4">باقات العمرة المميزة</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    اكتشف أفضل الباقات المختارة بعناية لتجربة عمرة لا تُنسى.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="package-card">
+<div class="package-header">
+<h3 class="text-xl font-bold">باقة القرب والسكينة</h3>
+<div class="package-price">450 ﷼</div>
+<div class="text-sm">تبدأ من</div>
+</div>
+<div class="package-features">
+<ul class="list-unstyled">
+<li><i class="fas fa-check-circle"></i> إقامة في فندق فلسطين</li>
+<li><i class="fas fa-check-circle"></i> على بعد خطوات من الحرم</li>
+<li><i class="fas fa-check-circle"></i> باصات حديثة ومكيفة</li>
+<li><i class="fas fa-check-circle"></i> إفطار يومي</li>
+</ul>
+<a class="btn-gold w-full py-3 rounded-lg text-center mt-4" href="#generator">احجز الآن</a>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="package-card">
+<div class="package-header">
+<h3 class="text-xl font-bold">باقة التوفير الذكي</h3>
+<div class="package-price">250 ﷼</div>
+<div class="text-sm">تبدأ من</div>
+</div>
+<div class="package-features">
+<ul class="list-unstyled">
+<li><i class="fas fa-check-circle"></i> إقامة في فندق زاد الرحمة</li>
+<li><i class="fas fa-check-circle"></i> خدمة نقل مجانية للحرم</li>
+<li><i class="fas fa-check-circle"></i> غرف نظيفة ومريحة</li>
+<li><i class="fas fa-check-circle"></i> واي فاي مجاني</li>
+</ul>
+<a class="btn-gold w-full py-3 rounded-lg text-center mt-4" href="#generator">احجز الآن</a>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="package-card">
+<div class="package-header">
+<h3 class="text-xl font-bold">باقة الرفاهية الكاملة</h3>
+<div class="package-price">850 ﷼</div>
+<div class="text-sm">تبدأ من</div>
+</div>
+<div class="package-features">
+<ul class="list-unstyled">
+<li><i class="fas fa-check-circle"></i> إقامة فندق 5 نجوم</li>
+<li><i class="fas fa-check-circle"></i> مواصلات خاصة VIP</li>
+<li><i class="fas fa-check-circle"></i> وجبات متنوعة</li>
+<li><i class="fas fa-check-circle"></i> جولات سياحية</li>
+</ul>
+<a class="btn-gold w-full py-3 rounded-lg text-center mt-4" href="#generator">احجز الآن</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-24 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl section-title mb-4">لماذا تختار بوابة المعتمر؟</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    نقدم لكم تجربة فريدة ومتميزة تجمع بين الروحانية والراحة في رحلة العمرة.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="text-center">
+<div class="feature-icon">
+<i class="fas fa-search-dollar"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">أسعار تنافسية</h3>
+<p class="text-gray-600">نضمن لكم أفضل الأسعار في السوق مع ضمان الجودة والخدمة المتميزة.</p>
+</div>
+<div class="text-center">
+<div class="feature-icon">
+<i class="fas fa-hotel"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">فنادق متميزة</h3>
+<p class="text-gray-600">نختار لكم أفضل الفنادق القريبة من الحرم المكي الشريف لتسهيل أداء المناسك.</p>
+</div>
+<div class="text-center">
+<div class="feature-icon">
+<i class="fas fa-bus"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">نقل مريح</h3>
+<p class="text-gray-600">أسطول من الحافلات الحديثة والمكيفة لضمان راحتكم خلال رحلتكم.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Offers Display Area -->
+<div class="py-24 bg-white hidden" id="offers-section">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl section-title text-center mb-4" id="offers-results-title"></h2>
+<div class="flex justify-center items-center gap-2 md:gap-4 mb-8 bg-gray-50 p-3 rounded-xl shadow-sm border" id="sorting-controls">
+<span class="font-bold text-gray-600 hidden md:block">فرز حسب:</span>
+<button class="sort-btn active px-4 py-2 rounded-lg font-medium" data-sort="price">
+<i class="fas fa-dollar-sign mr-2"></i>السعر الأقل
+                </button>
+<button class="sort-btn px-4 py-2 rounded-lg font-medium text-gray-700 bg-white border" data-sort="rating">
+<i class="fas fa-star mr-2"></i>الأعلى تقييماً
+                </button>
+<button class="sort-btn px-4 py-2 rounded-lg font-medium text-gray-700 bg-white border" data-sort="distance">
+<i class="fas fa-walking mr-2"></i>الأقرب للحرم
+                </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="offers-container">
+<!-- Offer cards will be injected here by JS -->
+</div>
+</div>
+</div>
+<!-- Umrah Steps Section -->
+<section class="py-24 bg-gray-50" id="umrah-steps">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl section-title mb-4">رحلتك الإيمانية خطوة بخطوة</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    دليل مرئي بسيط لمناسك العمرة الرئيسية التي ستؤديها في رحاب مكة المكرمة.
+                </p>
+</div>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fas fa-user-tag"></i>
+</div>
+<div class="timeline-content">
+<h3 class="text-xl font-bold mb-2">الإحرام</h3>
+<p>نية الدخول في النسك من الميقات المحدد لرحلتكم.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fas fa-kaaba"></i>
+</div>
+<div class="timeline-content">
+<h3 class="text-xl font-bold mb-2">الطواف</h3>
+<p>سبعة أشواط حول الكعبة المشرفة، تبدأ وتنتهي من الحجر الأسود.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fas fa-running"></i>
+</div>
+<div class="timeline-content">
+<h3 class="text-xl font-bold mb-2">السعي</h3>
+<p>سبعة أشواط بين الصفا والمروة، تبدأ بالصفا وتنتهي بالمروة.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fas fa-cut"></i>
+</div>
+<div class="timeline-content">
+<h3 class="text-xl font-bold mb-2">الحلق أو التقصير</h3>
+<p>التحلل من الإحرام بحلق شعر الرأس كاملاً أو تقصيره.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-24 bg-white" id="gallery">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl section-title mb-4">معرض الصور</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    استمتع بمشاهدة أجمل الصور من رحلات العمرة والمعالم السياحية في المملكة.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="gallery-item">
+<img alt="المسجد الحرام" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1587474268324-8e3c4b1b2f5a?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+<div class="gallery-overlay">المسجد الحرام</div>
+</div>
+<div class="gallery-item">
+<img alt="حافلات العمرة" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1574624816427-c9a631293c3e?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+<div class="gallery-overlay">حافلات العمرة المريحة</div>
+</div>
+<div class="gallery-item">
+<img alt="فنادق مكة" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1566073771259-6a850609994d?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+<div class="gallery-overlay">فنادق مكة الفاخرة</div>
+</div>
+<div class="gallery-item">
+<img alt="المسجد النبوي" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1596178065887-119897f93e4f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+<div class="gallery-overlay">المسجد النبوي الشريف</div>
+</div>
+<div class="gallery-item">
+<img alt="المدينة المنورة" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1588269369162-4b11c4ef254a?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+<div class="gallery-overlay">المدينة المنورة</div>
+</div>
+<div class="gallery-item">
+<img alt="المأذنة" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1592839626264-6b47b1d1d1a7?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+<div class="gallery-overlay">مآذن الحرم المكي</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-24 bg-gray-50" id="testimonials">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl section-title mb-4">آراء عملائنا</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    نشارككم بعض تجارب عملائنا السعداء مع بوابة المعتمر الرقمية.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="testimonial-card">
+<div class="testimonial-rating mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="mb-4">تجربة رائعة جداً، الفندق كان قريباً من الحرم والحافلات كانت مريحة ومكيفة. شكراً لبوابة المعتمر الرقمية.</p>
+<div class="flex items-center">
+<img alt="عميل" class="w-10 h-10 rounded-full ml-3" decoding="async" loading="lazy" src="https://randomuser.me/api/portraits/men/32.jpg"/>
+<div>
+<div class="font-bold">أحمد محمد</div>
+<div class="text-sm text-gray-500">الرياض</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-rating mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<p class="mb-4">أسعار ممتازة وجودة عالية في الخدمة. أنصح بشدة بالتعامل معهم، خاصة للعائلات.</p>
+<div class="flex items-center">
+<img alt="عميلة" class="w-10 h-10 rounded-full ml-3" decoding="async" loading="lazy" src="https://randomuser.me/api/portraits/women/44.jpg"/>
+<div>
+<div class="font-bold">فاطمة عبدالله</div>
+<div class="text-sm text-gray-500">جدة</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-rating mb-3">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<p class="mb-4">الموقع الإلكتروني سهل الاستخدام والحجز كان سريعاً. التجربة كانت ممتازة من البداية للنهاية.</p>
+<div class="flex items-center">
+<img alt="عميل" class="w-10 h-10 rounded-full ml-3" decoding="async" loading="lazy" src="https://randomuser.me/api/portraits/men/67.jpg"/>
+<div>
+<div class="font-bold">خالد السعيد</div>
+<div class="text-sm text-gray-500">الدمام</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Modern Transportation Section -->
+<section class="py-24 text-white transport-section" id="transport">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-4xl font-extrabold mb-4">أسطولنا الحديث لراحتكم</h2>
+<p class="text-lg text-gray-200 max-w-3xl mx-auto mb-12">
+                نسعى في بوابة المعتمر الرقمية لتوفير تجربة نقل مريحة وآمنة تليق بضيوف الرحمن، بالتعاون مع أفضل شركات النقل المجهزة بأحدث الحافلات.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white/10 backdrop-blur-md p-6 rounded-xl">
+<i class="fas fa-wifi text-4xl text-amber-400 mb-4"></i>
+<h3 class="text-2xl font-bold mb-2">خدمة واي فاي</h3>
+<p class="text-gray-300">ابق على تواصل مع أحبائك طوال رحلتك.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-6 rounded-xl">
+<i class="fas fa-snowflake text-4xl text-amber-400 mb-4"></i>
+<h3 class="text-2xl font-bold mb-2">تكييف مركزي</h3>
+<p class="text-gray-300">أجواء باردة ومريحة مهما كانت درجة الحرارة.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-6 rounded-xl">
+<i class="fas fa-couch text-4xl text-amber-400 mb-4"></i>
+<h3 class="text-2xl font-bold mb-2">مقاعد وثيرة</h3>
+<p class="text-gray-300">مقاعد مصممة لتوفير أقصى درجات الراحة أثناء السفر.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Salawat Bar -->
+<div class="py-3 text-center text-xl font-bold salawat-bar">
+        اللهم صلِّ وسلِّم على نبينا محمد
+    </div>
+<!-- Riyadh Section -->
+<section class="py-24 bg-gray-100" id="riyadh">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl section-title mb-4">أضف لتجربتك: ابدأ من الرياض</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    قبل أو بعد عمرتك، اكتشف عاصمة المملكة النابضة بالحياة، حيث تمتزج ناطحات السحاب بالأسواق التقليدية.
+                </p>
+</div>
+<div class="relative rounded-2xl overflow-hidden card-hover">
+<img alt="أفق الرياض ليلاً" class="w-full h-[500px] object-cover" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1587474268324-8e3c4b1b2f5a?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 right-0 p-8 text-white">
+<h3 class="text-4xl font-bold">استكشف الرياض العصرية</h3>
+<p class="mt-2 max-w-lg">من مركز الملك عبدالله المالي إلى موسم الرياض وبوليفارد وورلد، عش تجربة سياحية وترفيهية عالمية المستوى.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Heritage Section -->
+<section class="py-24 bg-white" id="heritage">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl section-title mb-4">محطات على طريق التراث</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    أثرِ رحلتك بزيارة كنوز الماضي التي تروي حكايات حضارات عريقة، وتعرف على الإرث الغني للمملكة.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+<img alt="مدائن صالح" class="w-full h-60 object-cover" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1592839626264-6b47b1d1d1a7?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">مدائن صالح، العلا</h3>
+<p class="text-gray-600 mb-4">أول موقع سعودي يدرج في قائمة اليونسكو للتراث العالمي، تحفة فنية نبطية منحوتة في الصخر تروي قصص الأنباط.</p>
+<a class="font-bold text-amber-700 hover:text-amber-800" href="#">اكتشف المزيد <i class="fas fa-arrow-left mr-2"></i></a>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+<img alt="الدرعية ليلاً" class="w-full h-60 object-cover" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1588269369162-4b11c4ef254a?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">حي الطريف، الدرعية</h3>
+<p class="text-gray-600 mb-4">مهد الدولة السعودية الأولى، مدينة طينية تاريخية تأخذك في رحلة عبر الزمن إلى قلب التاريخ السعودي.</p>
+<a class="font-bold text-amber-700 hover:text-amber-800" href="#">اكتشف المزيد <i class="fas fa-arrow-left mr-2"></i></a>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+<img alt="جدة التاريخية" class="w-full h-60 object-cover" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1596178065887-119897f93e4f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">جدة التاريخية (البلد)</h3>
+<p class="text-gray-600 mb-4">بوابة مكة البحرية، تتميز برواشينها الخشبية الفريدة وأزقتها الضيقة التي تروي حكايات الماضي البحري العريق.</p>
+<a class="font-bold text-amber-700 hover:text-amber-800" href="#">اكتشف المزيد <i class="fas fa-arrow-left mr-2"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- App Promotion Section -->
+<section class="py-24 islamic-pattern-bg" id="app-promotion">
+<div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-1/2 text-center lg:text-right">
+<h2 class="text-4xl font-extrabold text-primary-dark mb-4">تجربة عمرة أسهل مع تطبيقنا</h2>
+<p class="text-lg text-gray-700 mb-8">
+                    حجز سريع، تتبع مباشر لرحلتك، وعروض حصرية بين يديك. حمّل التطبيق الآن واجعل رحلتك الإيمانية أكثر سلاسة.
+                </p>
+<div class="flex justify-center lg:justify-start gap-4">
+<a href="#"><img alt="Google Play" class="h-14" decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"/></a>
+<a href="#"><img alt="App Store" class="h-14" decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"/></a>
+</div>
+</div>
+<div class="lg:w-1/2">
+<img alt="تطبيق بوابة المعتمر" class="max-w-md mx-auto rounded-xl shadow-xl" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"/>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary-dark text-white">
+<div class="container mx-auto px-6 py-12">
+<!-- Payment Methods -->
+<div class="text-center mb-10">
+<h4 class="text-lg font-bold mb-4 text-amber-400">وسائل الدفع المعتمدة</h4>
+<div class="flex justify-center items-center gap-6">
+<img alt="Visa" class="h-8 bg-white p-1 rounded" decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.svg/1280px-Visa_Logo.svg.png"/>
+<img alt="Mastercard" class="h-8 bg-white p-1 rounded" decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1280px-MasterCard_Logo.svg.png"/>
+<img alt="Mada" class="h-10 bg-white p-1 rounded" decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Mada_logo.svg"/>
+<img alt="Apple Pay" class="h-8 bg-white p-1 rounded" decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_Pay_logo.svg/1280px-Apple_Pay_logo.svg.png"/>
+</div>
+</div>
+<div class="border-t border-gray-700 my-8"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h4 class="text-xl font-bold mb-4 text-amber-400">بوابة المعتمر الرقمية</h4>
+<p class="text-gray-400">رفيقك لاستكشاف كنوز المملكة الروحانية والثقافية.</p>
+<div class="flex gap-4 mt-4 text-amber-400">
+<a class="hover:text-white" href="#"><i class="fab fa-facebook text-2xl"></i></a>
+<a class="hover:text-white" href="#"><i class="fab fa-twitter text-2xl"></i></a>
+<a class="hover:text-white" href="#"><i class="fab fa-instagram text-2xl"></i></a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">روابط مهمة</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a class="hover:text-white" href="#">عن المنصة</a></li>
+<li><a class="hover:text-white" href="#">الأسئلة الشائعة</a></li>
+<li><a class="hover:text-white" href="#">سياسة الخصوصية</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">تواصل معنا</h4>
+<ul class="space-y-2 text-gray-400">
+<li><i class="fas fa-phone ml-2 text-amber-400"></i> 920000890</li>
+<li><i class="fas fa-envelope ml-2 text-amber-400"></i> support@motamr.sa</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">النشرة البريدية</h4>
+<p class="text-gray-400 mb-4">اشترك ليصلك كل جديد</p>
+<div class="flex">
+<input class="bg-gray-800 text-white px-4 py-2 rounded-r-lg flex-1 focus:outline-none focus:ring-2 focus:ring-amber-400" placeholder="بريدك الإلكتروني" type="email"/>
+<button class="bg-amber-500 hover:bg-amber-600 px-4 py-2 rounded-l-lg transition">
+<i class="fas fa-paper-plane"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500">
+<p>© 2024 بوابة المعتمر الرقمية. جميع الحقوق محفوظة.</p>
+</div>
+</div>
+</footer>
+<!-- Modal -->
+<div class="modal-overlay" id="customAlertModal">
+<div class="modal-content">
+<div class="flex justify-center mb-4">
+<div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
+<i class="fas fa-exclamation-circle text-green-600 text-3xl" id="alertIcon"></i>
+</div>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4" id="alertTitle">تنبيه</h3>
+<p class="text-gray-600" id="alertMessage"></p>
+<button class="mt-6 bg-green-600 text-white px-8 py-2 rounded-lg font-bold hover:bg-green-700 transition" id="closeAlertModal">حسناً</button>
+</div>
+</div>
+<!-- Image Modal -->
+<div id="image-modal" onclick="this.classList.remove('active')">
+<img alt="Offer Image Preview" decoding="async" id="modal-image-content" loading="lazy" src=""/>
+</div>
+<!-- Template for Offer Cards -->
+<template id="offer-card-template">
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover flex flex-col relative">
+<div class="offer-badge absolute top-0 right-0 text-white text-xs font-bold px-3 py-1 rounded-bl-lg"></div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start">
+<h3 class="hotel-name text-xl font-bold text-gray-800 mb-1 w-2/3"></h3>
+<div class="hotel-rating flex items-center gap-1 text-sm bg-amber-100 text-amber-800 px-2 py-1 rounded-full">
+<i class="fas fa-star text-amber-500"></i>
+<span class="font-bold"></span>
+</div>
+</div>
+<div class="flex items-center mb-3">
+<div class="hotel-stars flex text-amber-400"></div>
+</div>
+<div class="hotel-features flex items-center gap-4 text-gray-500 text-sm mb-3 border-b pb-3">
+<!-- Feature icons will be injected here -->
+</div>
+<p class="hotel-headline text-gray-600 mb-2 flex-grow"></p>
+<p class="expert-tip text-xs text-green-700 bg-green-50 p-2 rounded-md mb-4"></p>
+<div class="mt-auto">
+<div class="mb-4 text-center border-t border-b border-gray-100 py-3">
+<div class="text-gray-500 text-sm">السعر الإجمالي للرحلة</div>
+<div class="total-cost text-green-700 font-extrabold text-4xl"></div>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="copy-btn bg-gray-200 text-gray-800 font-bold py-3 px-3 rounded-lg hover:bg-gray-300 transition-all duration-200 transform hover:scale-105" title="نسخ النص"><i class="fas fa-copy"></i> نسخ</button>
+<button class="image-btn bg-blue-500 text-white font-bold py-3 px-3 rounded-lg hover:bg-blue-600 transition-all duration-200 transform hover:scale-105 flex justify-center items-center" title="إنشاء صورة للعرض"><i class="fas fa-image"></i> صورة</button>
+<a class="whatsapp-btn bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition-all duration-200 transform hover:scale-105 flex items-center justify-center" href="#" title="إرسال عبر واتساب"><i class="fab fa-whatsapp"></i> حجز</a>
+</div>
+</div>
+</div>
+</div>
+</template>
+<div id="offer-image-container" style="position: absolute; top: -9999px; left: -9999px; font-family: 'Tajawal', 'Almarai', sans-serif;">
+<div id="offer-image-template" style="width: 750px; height: 1334px; background-size: cover; background-position: center; position: relative; color: white; display: flex; flex-direction: column; font-family: 'Tajawal', 'Almarai', sans-serif; border: 12px solid #d4af37; box-sizing: border-box;">
+<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.3) 100%);"></div>
+<div style="position: relative; z-index: 2; padding: 40px; display: flex; flex-direction: column; height: 100%;">
+<header style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid rgba(255, 215, 0, 0.5); padding-bottom: 20px;">
+<div style="text-align: right;">
+<div style="font-family: 'Amiri', serif; font-size: 32px; color: #ffd700; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">وَأَتِمُّوا الْحَجَّ وَالْعُمْرَةَ لِلَّهِ</div>
+<div id="template-agency-name" style="font-size: 28px; font-weight: 900; text-shadow: 0 2px 8px rgba(0,0,0,0.7);"></div>
+<div style="font-size: 16px; color: #a0aec0; margin-top: 4px;">أول منصة تقنية مبتكرة للعمرة في المملكة</div>
+</div>
+<img alt="Agency Logo" decoding="async" id="template-agency-logo" loading="lazy" src="" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid #ffd700; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+</img></header>
+<div style="flex-grow: 1;"></div>
+<main id="template-main-box" style="background: linear-gradient(160deg, rgba(10, 20, 40, 0.9) 0%, rgba(40, 50, 90, 0.85) 100%); border-radius: 20px; padding: 30px; border: 2px solid #d4af37; backdrop-filter: blur(10px); position: relative;">
+<div id="love-touch-badge" style="position: absolute; top: -20px; left: 20px; background: linear-gradient(135deg, #e91e63, #c2185b); color: white; padding: 8px 15px; border-radius: 50px; font-size: 18px; font-weight: bold; transform: rotate(-10deg); box-shadow: 0 5px 15px rgba(0,0,0,0.3); display: none;">
+<i class="fas fa-heart" style="margin-right: 5px;"></i> عرض خاص للشباب
+                    </div>
+<div style="position: absolute; top: -20px; right: 20px; background: linear-gradient(135deg, #3b82f6, #1e40af); color: white; padding: 8px 15px; border-radius: 50px; font-size: 16px; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+<i class="fas fa-rocket" style="margin-right: 5px;"></i> TravelTech
+                    </div>
+<div id="template-client-name" style="font-size: 24px; color: #f0f0f0; text-align: center; margin-bottom: 25px;"></div>
+<div style="display: flex; gap: 15px; align-items: center; margin-bottom: 25px;">
+<img alt="Hotel Image" decoding="async" id="template-hotel-image" loading="lazy" src="" style="width: 120px; height: 120px; object-fit: cover; border-radius: 15px; border: 2px solid #ffd700;">
+<div style="flex: 1; text-align: center;">
+<h2 id="template-hotel-name" style="font-size: 38px; font-weight: 900; color: #ffd700; margin: 0; text-shadow: 0 2px 5px rgba(0,0,0,0.5);"></h2>
+<div id="template-stars" style="font-size: 22px; color: #ffc107;"></div>
+</div>
+<img alt="Bus Image" decoding="async" id="template-bus-image" loading="lazy" src="" style="width: 120px; height: 120px; object-fit: cover; border-radius: 15px; border: 2px solid #c0c0c0;">
+</img></img></div>
+<div style="background: rgba(255, 215, 0, 0.1); border-right: 4px solid #ffd700; border-radius: 10px; padding: 20px; margin-bottom: 25px;">
+<p id="template-recommendation" style="line-height: 1.7; margin: 0; font-size: 24px;"></p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 20px; margin-bottom: 30px;">
+<div id="template-dates" style="display: flex; align-items: center; gap: 10px;"><i class="fas fa-calendar-alt" style="color: #ffd700;"></i><span></span></div>
+<div id="template-booking-details" style="display: flex; align-items: center; gap: 10px;"><i class="fas fa-users" style="color: #ffd700;"></i><span></span></div>
+<div id="template-bus-details" style="display: flex; align-items: center; gap: 10px;"><i class="fas fa-bus" style="color: #ffd700;"></i><span></span></div>
+<div id="template-location-details" style="display: flex; align-items: center; gap: 10px;"><i class="fas fa-map-marker-alt" style="color: #ffd700;"></i><span></span></div>
+</div>
+<div style="background: linear-gradient(135deg, #d4af37, #b8860b); border-radius: 15px; padding: 20px; text-align: center; color: #111827;">
+<div id="price-title" style="font-size: 22px; font-weight: 700;">السعر الإجمالي</div>
+<div style="font-size: 64px; font-weight: 900; line-height: 1.1;">
+<span id="price-value"></span>
+<span style="font-size: 48px;">﷼</span>
+</div>
+<div id="price-breakdown" style="font-size: 16px; opacity: 0.9; margin-top: 5px;"></div>
+</div>
+</main>
+<footer style="margin-top: 30px; display: flex; align-items: center; justify-content: space-between; background: rgba(17, 24, 39, 0.85); padding: 20px; border-radius: 20px; border-top: 2px solid #ffd700;">
+<div>
+<div id="template-motivational-footer" style="font-size: 20px; font-weight: 700; color: #ffd700;"></div>
+<div id="template-contact" style="font-size: 28px; font-weight: bold; letter-spacing: 1px;"></div>
+<div style="font-size: 14px; color: #a0aec0; margin-top: 4px;">بوابة المعتمر الرقمية - رؤية 2030</div>
+</div>
+<div id="template-qrcode" style="background: white; padding: 5px; border-radius: 8px;"></div>
+</footer>
+</div>
+</div>
+</div>
+<!-- Chatbot Widget -->
+<div class="chat-widget-button" id="chat-widget-button">
+<img alt="Chat Icon" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1574624816427-c9a631293c3e?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=80"/>
+</div>
+<div class="chat-container" id="chat-container">
+<div class="chat-header">
+<h3>مساعدك الذكي</h3>
+<div class="flex items-center">
+<button class="reset-btn" id="reset-chat-btn" title="بدء محادثة جديدة"><i class="fas fa-redo"></i></button>
+<button class="close-btn" id="close-chat-btn">×</button>
+</div>
+</div>
+<div class="chat-messages" id="chat-messages">
+<!-- Messages will be appended here -->
+</div>
+<div class="chat-options" id="chat-options">
+<!-- Initial options will be appended here -->
+</div>
+<form class="chat-input-form" id="chat-input-form">
+<input autocomplete="off" id="chat-input" placeholder="اكتب رسالتك هنا..." type="text"/>
+<button id="mic-btn" type="button"><i class="fas fa-microphone"></i></button>
+<button type="submit"><i class="fas fa-paper-plane"></i></button>
+</form>
+</div>
+<!-- Floating Action Button -->
+<div class="floating-action-btn" title="اتصل بنا">
+<i class="fas fa-phone-alt"></i>
+</div>
+
+<script defer="True" src="js/app.js"></script></body>
+</html>
