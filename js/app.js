@@ -911,3 +911,36 @@ document.addEventListener("DOMContentLoaded", () => {
     micBtn.style.display = "none";
   }
 });
+
+// Chatbot widget wiring
+let chatbotInstance;
+const chatButton = document.getElementById('chat-button');
+const chatContainer = document.getElementById('chat-dialog');
+
+function loadChatbot() {
+  if (chatbotInstance) return Promise.resolve(chatbotInstance);
+  return import('./chatbot.js').then(({ ChatBot }) => {
+    chatbotInstance = new ChatBot(chatContainer);
+    chatbotInstance.init();
+    return chatbotInstance;
+  });
+}
+
+if (chatButton) {
+  chatButton.addEventListener('click', () => {
+    loadChatbot().then((bot) => bot.open());
+  });
+}
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === '?' && chatContainer.hidden) {
+    e.preventDefault();
+    loadChatbot().then((bot) => bot.open());
+  }
+});
+
+document.addEventListener('chat:open', () => console.log('chat:open'));
+document.addEventListener('chat:message', (e) =>
+  console.log('chat:message', e.detail),
+);
+document.addEventListener('chat:close', () => console.log('chat:close'));
