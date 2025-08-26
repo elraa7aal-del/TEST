@@ -1466,59 +1466,58 @@
         </div>
       </div>
     </div>
-    <!-- Chatbot Widget -->
-    <div class="chat-widget-button" id="chat-widget-button">
-      <img
-        alt="Chat Icon"
-        src="https://images.unsplash.com/photo-1574624816427-c9a631293c3e?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=80"
-        loading="lazy"
-        decoding="async"
-        width="600"
-        height="400"
-        srcset="
-          https://images.unsplash.com/photo-1574624816427-c9a631293c3e?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=80         1x,
-          https://images.unsplash.com/photo-1574624816427-c9a631293c3e?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=80&fm=webp 1x
-        "
-      />
-    </div>
-    <div class="chat-container" id="chat-container">
-      <div class="chat-header">
-        <h3>مساعدك الذكي</h3>
-        <div class="flex items-center">
-          <button
-            class="reset-btn"
-            id="reset-chat-btn"
-            title="بدء محادثة جديدة"
-          >
-            <i class="fas fa-redo"></i>
-          </button>
-          <button class="close-btn" id="close-chat-btn">×</button>
-        </div>
-      </div>
-      <div class="chat-messages" id="chat-messages">
-        <!-- Messages will be appended here -->
-      </div>
-      <div class="chat-options" id="chat-options">
-        <!-- Initial options will be appended here -->
-      </div>
-      <form class="chat-input-form" id="chat-input-form">
-        <input
-          autocomplete="off"
-          id="chat-input"
-          placeholder="اكتب رسالتك هنا..."
-          type="text"
-        />
-        <button id="mic-btn" type="button">
-          <i class="fas fa-microphone"></i>
+    <button
+      class="chatbot-button"
+      id="chat-button"
+      aria-label="Open chat"
+    >
+      <img src="assets/icons/chat.svg" alt="" />
+    </button>
+    <div
+      class="chatbot"
+      id="chat-dialog"
+      role="dialog"
+      aria-modal="true"
+      hidden
+    >
+      <div class="chatbot__header">
+        <h2 class="chatbot__title">المساعد الذكي</h2>
+        <button class="chatbot__close" aria-label="إغلاق">
+          <img src="assets/icons/close.svg" alt="" />
         </button>
-        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+      </div>
+      <div id="chat-offline" class="chatbot__offline" hidden>
+        ⚠️ لا يوجد اتصال بالإنترنت
+      </div>
+      <div
+        id="chat-messages"
+        class="chatbot__messages"
+        aria-live="polite"
+      ></div>
+      <form id="chat-form" class="chatbot__form">
+        <textarea
+          id="chat-input"
+          class="chatbot__input"
+          rows="1"
+          placeholder="اكتب رسالتك..."
+          aria-label="اكتب رسالتك"
+        ></textarea>
+        <button type="submit" id="chat-send" class="chatbot__send">
+          إرسال
+        </button>
+        <button type="button" id="chat-clear" class="chatbot__clear">
+          مسح
+        </button>
       </form>
     </div>
-    <!-- Floating Action Button -->
-    <div class="floating-action-btn" title="اتصل بنا">
-      <i class="fas fa-phone-alt"></i>
-    </div>
-
-    <script defer="True" src="js/app.js"></script>
+    <script type="module" defer src="js/app.js"></script>
+    <!--
+      Testing Checklist:
+      - Keyboard only flow works
+      - Mobile viewport renders without overflow
+      - Offline banner blocks send
+      - History persists across reloads
+      - Events logged
+    -->
   </body>
 </html>
